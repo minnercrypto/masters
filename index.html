@@ -63,6 +63,43 @@
     </div>
   </div>
 
+  <!-- TradingView Widget BEGIN -->
+  <div class="tradingview-widget-container" style="position: fixed; z-index: 1; margin-top: 10vh;">
+    <div class="tradingview-widget-container__widget"></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+    {
+    "symbols": [
+      {
+        "proName": "FOREXCOM:SPXUSD",
+        "title": "S&P 500"
+      },
+      {
+        "proName": "FOREXCOM:NSXUSD",
+        "title": "Nasdaq 100"
+      },
+      {
+        "proName": "FX_IDC:EURUSD",
+        "title": "EUR/USD"
+      },
+      {
+        "proName": "BITSTAMP:BTCUSD",
+        "title": "BTC/USD"
+      },
+      {
+        "proName": "BITSTAMP:ETHUSD",
+        "title": "ETH/USD"
+      }
+    ],
+    "showSymbolLogo": false,
+    "colorTheme": "white",
+    "isTransparent": true,
+    "displayMode": "adaptive",
+    "locale": "es"
+  }
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
+
   <header class="header-2">
     <div class="page-header min-vh-75">
       <div class="" style="background-image: url('/prin/img/office-bitcoinas.jpg');position: absolute;

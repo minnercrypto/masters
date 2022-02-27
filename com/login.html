@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="apple-touch-icon" sizes="76x76" href="../prin/img/apple-icon.png">
-  <link rel="icon" type="image/png" href="./prin/img/favicon.png">
+  <link rel="icon" type="image/png" href="../prin/img/favicon.png">
   <title>
    Iniciar Sesión | Grandes Inversiones
   </title>
@@ -62,6 +62,43 @@
       </div>
     </div>
   </div>
+
+  <!-- TradingView Widget BEGIN -->
+  <div class="tradingview-widget-container" style="position: fixed; z-index: 1; margin-top: 10vh;">
+    <div class="tradingview-widget-container__widget"></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+    {
+    "symbols": [
+      {
+        "proName": "FOREXCOM:SPXUSD",
+        "title": "S&P 500"
+      },
+      {
+        "proName": "FOREXCOM:NSXUSD",
+        "title": "Nasdaq 100"
+      },
+      {
+        "proName": "FX_IDC:EURUSD",
+        "title": "EUR/USD"
+      },
+      {
+        "proName": "BITSTAMP:BTCUSD",
+        "title": "BTC/USD"
+      },
+      {
+        "proName": "BITSTAMP:ETHUSD",
+        "title": "ETH/USD"
+      }
+    ],
+    "showSymbolLogo": false,
+    "colorTheme": "white",
+    "isTransparent": true,
+    "displayMode": "adaptive",
+    "locale": "es"
+  }
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
 
   <section>
     <div class="page-header min-vh-100">
