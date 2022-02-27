@@ -63,43 +63,6 @@
     </div>
   </div>
 
-  <!-- TradingView Widget BEGIN -->
-  <div class="tradingview-widget-container" style="position: fixed; z-index: 1; margin-top: 10vh;">
-    <div class="tradingview-widget-container__widget"></div>
-    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
-    {
-    "symbols": [
-      {
-        "proName": "FOREXCOM:SPXUSD",
-        "title": "S&P 500"
-      },
-      {
-        "proName": "FOREXCOM:NSXUSD",
-        "title": "Nasdaq 100"
-      },
-      {
-        "proName": "FX_IDC:EURUSD",
-        "title": "EUR/USD"
-      },
-      {
-        "proName": "BITSTAMP:BTCUSD",
-        "title": "BTC/USD"
-      },
-      {
-        "proName": "BITSTAMP:ETHUSD",
-        "title": "ETH/USD"
-      }
-    ],
-    "showSymbolLogo": false,
-    "colorTheme": "white",
-    "isTransparent": true,
-    "displayMode": "adaptive",
-    "locale": "es"
-  }
-    </script>
-  </div>
-  <!-- TradingView Widget END -->
-
   <section>
     <div class="page-header min-vh-100">
       <div class="container">
@@ -111,19 +74,19 @@
                 <p class="mb-0">Ingrese su correo electrónico y contraseña para iniciar sesión</p>
               </div>
               <div class="card-body">
-                <form role="form">
+                <form id="login-form">
                   <div class="mb-3">
-                    <input type="email" class="form-control form-control-lg" placeholder="Correo Electrónico" aria-label="Email" aria-describedby="email-addon">
+                    <input type="email" id="login-email" required class="form-control form-control-lg" placeholder="Correo Electrónico" aria-label="Email" aria-describedby="email-addon">
                   </div>
                   <div class="mb-3">
-                    <input type="email" class="form-control form-control-lg" placeholder="Contraseña" aria-label="Password" aria-describedby="password-addon">
+                    <input type="password" id="login-password" class="form-control form-control-lg" placeholder="Contraseña" aria-label="Password" aria-describedby="password-addon">
                   </div>
                   <div class="form-check form-switch">
                     <input class="form-check-input" type="checkbox" id="rememberMe">
                     <label class="form-check-label" for="rememberMe">Recuérdame</label>
                   </div>
                   <div class="text-center">
-                    <button type="button" class="btn btn-lg bg-gradient-primary btn-lg w-100 mt-4 mb-0">Iniciar Sesión</button>
+                    <button type="submit" class="btn btn-lg bg-gradient-primary btn-lg w-100 mt-4 mb-0">Iniciar Sesión</button>
                   </div>
                 </form>
               </div>
@@ -258,6 +221,17 @@
       };
     }
   </script>
+  <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-functions.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-analytics.js"></script>
+  <script src="../prin/js/config/firebase.config.js"></script>
+  <script src="../prin/js/utils/definitions.js"></script>
+  <script src="../prin/js/authy-login.js"></script>
+  <script src="../prin/js/ob-re-in.js"></script>
+  <script src="../prin/js/reset.js"></script>
 </body>
 
 </html>
