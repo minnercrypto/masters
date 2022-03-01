@@ -19,6 +19,17 @@
   <link href="./prin/css/nucleo-svg.css" rel="stylesheet" />
   <!-- CSS Files -->
   <link id="pagestyle" href="./prin/css/soft-design-system.css?v=1.0.5" rel="stylesheet" />
+  <!-- Smartsupp Live Chat script -->
+<script type="text/javascript">
+  var _smartsupp = _smartsupp || {};
+  _smartsupp.key = '89e408edbaa4e946def59fbab844ce2146f124e8';
+  window.smartsupp||(function(d) {
+    var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+    s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+    c.type='text/javascript';c.charset='utf-8';c.async=true;
+    c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+  })(document);
+  </script>
 </head>
 
 <body class="index-page">
@@ -39,7 +50,7 @@
               </span>
             </button>
             <div class="collapse navbar-collapse pt-3 pb-2 py-lg-0 w-100" id="navigation">
-              <ul class="navbar-nav navbar-nav-hover ms-lg-12 ps-lg-5 w-100">
+              <ul class="navbar-nav navbar-nav-hover ms-lg-12 ps-lg-5 w-100" id="items-nav">
                 <li class="nav-item dropdown dropdown-hover mx-2">
                   <a class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center font-weight-bold" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ver Planes" id="dropdownMenuDocs" data-bs-toggle="dropdown" aria-expanded="false">
                     Planes
@@ -52,7 +63,7 @@
                   </a>
                 </li>
                 <li class="nav-item my-auto ms-3 ms-lg-0">
-                  <a href="./com/register.html" class="btn btn-sm  bg-gradient-primary  btn-round mb-0 me-1 mt-2 mt-md-0">Comenzar ahora</a>
+                  <a href="#register" class="btn btn-sm  bg-gradient-primary  btn-round mb-0 me-1 mt-2 mt-md-0">Comenzar ahora</a>
                 </li>
               </ul>
             </div>
@@ -112,7 +123,7 @@
         <div class="row">
           <div class="col-lg-7 text-center mx-auto">
             <img src="/prin/img/masters-logo.png" class="img-fluid">
-            <p class="lead text-dark mt-3 font-weight-bold">La plataforma de grandes inversiones más segura del planeta.</p>
+            <p class="lead text-dark mt-3 font-weight-bold">La plataforma de grandes inversiones más segura del mundo.</p>
           </div>
         </div>
       </div>
@@ -133,127 +144,214 @@
       </div>
     </div>
   </header>
-  <section class="my-5 py-5">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-4 ms-auto me-auto p-lg-4 mt-lg-0 mt-4">
-          <div class="card card-background card-background-mask-primary tilt" data-tilt="" style="will-change: transform; transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);">
-            <div class="full-background" style="background-image: url('./prin/img/curved-images/curved8.jpg')"></div>
-            <div class="card-body text-center">
-              <h3 class="text-white up mb-0">Paquete Premium Básico</h3>
-              <div style="margin-top: 20px;">
-                <p style="margin-top: -50;">
-                  Costo: $4,500.00 USD
-                </p>
-                <p style="margin-top: -50;">
-                  Ganancias Dirias: 1,037.50 USD
-                </p>
-                <p style="margin-top: -50;">
-                  Duración: 8 Días
-                </p>
-                <p style="margin-top: -50;">
-                  Total de Ganancias: 8,300.00 USD
-                </p>
+  <div class="wraper" style="margin-top: 10vh;">
+    <section class="pt-3 pb-4" id="count-stats">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9 z-index-2 border-radius-xl mt-n10 mx-auto py-3 blur shadow-blur">
+            <div class="row">
+              <div class="col-md-4 position-relative">
+                <div class="p-3 text-center">
+                  <h1 class="text-gradient text-primary"><span id="state1" countto="20">0</span>+</h1>
+                  <h5 class="mt-3"> Usuarios Unidos</h5>
+                  <p class="text-sm">Todos los usuarios registrados en la plataforma hasta ahora.</p>
+                </div>
+                <hr class="vertical dark">
               </div>
-              <a href="./com/register.html" target="_blank" class="btn btn-outline-white mt-5 up btn-round" style="font-size: 20px;">Comprar Plan</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 ms-auto me-auto p-lg-4 mt-lg-0 mt-4">
-          <div class="card card-background card-background-mask-primary tilt" data-tilt="" style="will-change: transform; transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);">
-            <div class="full-background" style="background-image: url('./prin/img/curved-images/curved2.jpg')"></div>
-            <div class="card-body text-center">
-              <h3 class="text-white up mb-0">Paquete Premium Bronce</h3>
-              <div style="margin-top: 20px;">
-                <p style="margin-top: -50;">
-                  Costo: $8,900.00 USD
-                </p>
-                <p style="margin-top: -50;">
-                  Ganancias Dirias: 2,428.50 USD
-                </p>
-                <p style="margin-top: -50;">
-                  Duración: 7 Días
-                </p>
-                <p style="margin-top: -50;">
-                  Total de Ganancias: 17,000.00 USD
-                </p>
+              <div class="col-md-4 position-relative">
+                <div class="p-3 text-center">
+                  <h1 class="text-gradient text-primary"> <span id="state2" countto="8">0</span>+</h1>
+                  <h5 class="mt-3">Cuentas Activadas</h5>
+                  <p class="text-sm">Todas las cuentas activadas con la compra de un plan hasta el momento.</p>
+                </div>
+                <hr class="vertical dark">
               </div>
-              <a href="./com/register.html" target="_blank" class="btn btn-outline-white mt-5 up btn-round" style="font-size: 20px;">Comprar Plan</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 ms-auto me-auto p-lg-4 mt-lg-0 mt-4">
-          <div class="card card-background card-background-mask-primary tilt" data-tilt="" style="will-change: transform; transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);">
-            <div class="full-background" style="background-image: url('./prin/img/curved-images/curved5.jpg')"></div>
-            <div class="card-body text-center">
-              <h3 class="text-white up mb-0">Paquete Premium Plata</h3>
-              <div style="margin-top: 20px;">
-                <p style="margin-top: -50;">
-                  Costo: $17,550.00 USD
-                </p>
-                <p style="margin-top: -50;">
-                  Ganancias Dirias: 7,000.00 USD
-                </p>
-                <p style="margin-top: -50;">
-                  Duración: 5 Días
-                </p>
-                <p style="margin-top: -50;">
-                  Total de Ganancias: 35,000.00 USD
-                </p>
+              <div class="col-md-4">
+                <div class="p-3 text-center">
+                  <h1 class="text-gradient text-primary"><span id="state3" countto="15">0</span>+</h1>
+                  <h5 class="mt-3">Planes Activados</h5>
+                  <p class="text-sm">Los planes comprados por los usuarios activados automáticamente.</p>
+                </div>
               </div>
-              <a href="./com/register.html" target="_blank" class="btn btn-outline-white mt-5 up btn-round" style="font-size: 20px;">Comprar Plan</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 ms-auto me-auto p-lg-4 mt-lg-0 mt-4">
-          <div class="card card-background card-background-mask-primary tilt" data-tilt="" style="will-change: transform; transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);">
-            <div class="full-background" style="background-image: url('./prin/img/curved-images/curved8.jpg')"></div>
-            <div class="card-body text-center">
-              <h3 class="text-white up mb-0">Paquete Premium Oro</h3>
-              <div style="margin-top: 20px;">
-                <p style="margin-top: -50;">
-                  Costo: $36,000.00 USD
-                </p>
-                <p style="margin-top: -50;">
-                  Ganancias Dirias: 11,600.00 USD
-                </p>
-                <p style="margin-top: -50;">
-                  Duración: 5 Días
-                </p>
-                <p style="margin-top: -50;">
-                  Total de Ganancias: 58,000.00 USD
-                </p>
-              </div>
-              <a href="./com/register.html" target="_blank" class="btn btn-outline-white mt-5 up btn-round" style="font-size: 20px;">Comprar Plan</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 ms-auto me-auto p-lg-4 mt-lg-0 mt-4">
-          <div class="card card-background card-background-mask-primary tilt" data-tilt="" style="will-change: transform; transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);">
-            <div class="full-background" style="background-image: url('./prin/img/curved-images/curved6.jpg')"></div>
-            <div class="card-body text-center">
-              <h3 class="text-white up mb-0">Paquete Premium Diamante</h3>
-              <div style="margin-top: 20px;">
-                <p style="margin-top: -50;">
-                  Costo: $60,000.00 USD
-                </p>
-                <p style="margin-top: -50;">
-                  Ganancias Dirias: 21,000.00 USD
-                </p>
-                <p style="margin-top: -50;">
-                  Duración: 5 Días
-                </p>
-                <p style="margin-top: -50;">
-                  Total de Ganancias: 105,000.00 USD
-                </p>
-              </div>
-              <a href="./com/register.html" target="_blank" class="btn btn-outline-white mt-5 up btn-round" style="font-size: 20px;">Comprar Plan</a>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+    <section id="register" style="margin-top: 10vh;">
+      <div class="page-header min-vh-100">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-4 col-lg-5 col-md-7 d-flex flex-column mx-lg-0 mx-auto">
+              <div class="card card-plain">
+                <div class="card-header pb-0 text-left">
+                  <h4 class="font-weight-bolder">Registarse</h4>
+                  <p class="mb-0">Registre un correo electrónico y cree una contraseña para registrarse</p>
+                </div>
+                <div class="card-body">
+                  <form id="signup-form">
+                    <div class="mb-3">
+                      <input type="text" id="signup-username" required class="form-control form-control-lg" placeholder="Nombre de Usuario" aria-label="Username" aria-describedby="username-addon">
+                    </div>
+                    <div class="mb-3">
+                      <input type="email" id="signup-email" required class="form-control form-control-lg" placeholder="Correo Electrónico" aria-label="Email" aria-describedby="email-addon">
+                    </div>
+                    <div class="mb-3">
+                      <input type="password" id="signup-password" required class="form-control form-control-lg" placeholder="Contraseña" aria-label="Password" aria-describedby="password-addon">
+                    </div>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="rememberMe">
+                      <label class="form-check-label" for="rememberMe">Acepto los terminos y condiciones.</label>
+                    </div>
+                    <div class="text-center">
+                      <button type="submit" class="btn btn-lg bg-gradient-primary btn-lg w-100 mt-4 mb-0">Registrarse</button>
+                    </div>
+                  </form>
+                </div>
+                <div class="card-footer text-center pt-0 px-lg-2 px-1">
+                  <p class="mb-4 text-sm mx-auto">
+                    ¿Ya tienes una cuenta?
+                    <a href="javascript:;" class="text-primary text-gradient font-weight-bold">Inicia Sesión</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 d-lg-flex d-none h-100 my-auto pe-0 position-absolute top-0 end-0 text-center justify-content-center flex-column">
+              <div class="position-relative bg-gradient-primary h-100 m-3 px-7 border-radius-lg d-flex flex-column justify-content-center">
+                <img src="../prin/img/shapes/pattern-lines.svg" alt="pattern-lines" class="position-absolute opacity-4 start-0">
+                <div class="position-relative">
+                  <img class="max-width-500 w-100 position-relative z-index-2" src="../prin/img/illustrations/chat.png">
+                </div>
+                <h4 class="mt-5 text-white font-weight-bolder">"Attention is the new currency"</h4>
+                <p class="text-white">The more effortless the writing looks, the more effort the writer actually put into the process.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="my-5 py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-4 ms-auto me-auto p-lg-4 mt-lg-0 mt-4">
+            <div class="card card-background card-background-mask-primary tilt" data-tilt="" style="will-change: transform; transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);">
+              <div class="full-background" style="background-image: url('./prin/img/curved-images/curved8.jpg')"></div>
+              <div class="card-body text-center">
+                <h3 class="text-white up mb-0">Paquete Premium Básico</h3>
+                <div style="margin-top: 20px;">
+                  <p style="margin-top: -50;">
+                    Costo: $4,500.00 USD
+                  </p>
+                  <p style="margin-top: -50;">
+                    Ganancias Dirias: 1,037.50 USD
+                  </p>
+                  <p style="margin-top: -50;">
+                    Duración: 8 Días
+                  </p>
+                  <p style="margin-top: -50;">
+                    Total de Ganancias: 8,300.00 USD
+                  </p>
+                </div>
+                <a href="./com/register.html" target="_blank" class="btn btn-outline-white mt-5 up btn-round" style="font-size: 20px;">Comprar Plan</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 ms-auto me-auto p-lg-4 mt-lg-0 mt-4">
+            <div class="card card-background card-background-mask-primary tilt" data-tilt="" style="will-change: transform; transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);">
+              <div class="full-background" style="background-image: url('./prin/img/curved-images/curved2.jpg')"></div>
+              <div class="card-body text-center">
+                <h3 class="text-white up mb-0">Paquete Premium Bronce</h3>
+                <div style="margin-top: 20px;">
+                  <p style="margin-top: -50;">
+                    Costo: $8,900.00 USD
+                  </p>
+                  <p style="margin-top: -50;">
+                    Ganancias Dirias: 2,428.50 USD
+                  </p>
+                  <p style="margin-top: -50;">
+                    Duración: 7 Días
+                  </p>
+                  <p style="margin-top: -50;">
+                    Total de Ganancias: 17,000.00 USD
+                  </p>
+                </div>
+                <a href="./com/register.html" target="_blank" class="btn btn-outline-white mt-5 up btn-round" style="font-size: 20px;">Comprar Plan</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 ms-auto me-auto p-lg-4 mt-lg-0 mt-4">
+            <div class="card card-background card-background-mask-primary tilt" data-tilt="" style="will-change: transform; transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);">
+              <div class="full-background" style="background-image: url('./prin/img/curved-images/curved5.jpg')"></div>
+              <div class="card-body text-center">
+                <h3 class="text-white up mb-0">Paquete Premium Plata</h3>
+                <div style="margin-top: 20px;">
+                  <p style="margin-top: -50;">
+                    Costo: $17,550.00 USD
+                  </p>
+                  <p style="margin-top: -50;">
+                    Ganancias Dirias: 7,000.00 USD
+                  </p>
+                  <p style="margin-top: -50;">
+                    Duración: 5 Días
+                  </p>
+                  <p style="margin-top: -50;">
+                    Total de Ganancias: 35,000.00 USD
+                  </p>
+                </div>
+                <a href="./com/register.html" target="_blank" class="btn btn-outline-white mt-5 up btn-round" style="font-size: 20px;">Comprar Plan</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 ms-auto me-auto p-lg-4 mt-lg-0 mt-4">
+            <div class="card card-background card-background-mask-primary tilt" data-tilt="" style="will-change: transform; transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);">
+              <div class="full-background" style="background-image: url('./prin/img/curved-images/curved8.jpg')"></div>
+              <div class="card-body text-center">
+                <h3 class="text-white up mb-0">Paquete Premium Oro</h3>
+                <div style="margin-top: 20px;">
+                  <p style="margin-top: -50;">
+                    Costo: $36,000.00 USD
+                  </p>
+                  <p style="margin-top: -50;">
+                    Ganancias Dirias: 11,600.00 USD
+                  </p>
+                  <p style="margin-top: -50;">
+                    Duración: 5 Días
+                  </p>
+                  <p style="margin-top: -50;">
+                    Total de Ganancias: 58,000.00 USD
+                  </p>
+                </div>
+                <a href="./com/register.html" target="_blank" class="btn btn-outline-white mt-5 up btn-round" style="font-size: 20px;">Comprar Plan</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 ms-auto me-auto p-lg-4 mt-lg-0 mt-4">
+            <div class="card card-background card-background-mask-primary tilt" data-tilt="" style="will-change: transform; transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);">
+              <div class="full-background" style="background-image: url('./prin/img/curved-images/curved6.jpg')"></div>
+              <div class="card-body text-center">
+                <h3 class="text-white up mb-0">Paquete Premium Diamante</h3>
+                <div style="margin-top: 20px;">
+                  <p style="margin-top: -50;">
+                    Costo: $60,000.00 USD
+                  </p>
+                  <p style="margin-top: -50;">
+                    Ganancias Dirias: 21,000.00 USD
+                  </p>
+                  <p style="margin-top: -50;">
+                    Duración: 5 Días
+                  </p>
+                  <p style="margin-top: -50;">
+                    Total de Ganancias: 105,000.00 USD
+                  </p>
+                </div>
+                <a href="./com/register.html" target="_blank" class="btn btn-outline-white mt-5 up btn-round" style="font-size: 20px;">Comprar Plan</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
   <!-- Footer -->
   <div class="pt-5">
     <div class="container">
@@ -373,6 +471,16 @@
       };
     }
   </script>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-functions.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-analytics.js"></script>
+  <script src="../prin/js/config/firebase.config.js"></script>
+  <script src="../prin/js/utils/definitions.js"></script>
+  <script src="../prin/js/authy-index.js"></script>
+  <script src="../prin/js/auth.js"></script>
 </body>
 
 </html>

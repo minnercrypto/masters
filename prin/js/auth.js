@@ -4,38 +4,20 @@ function observador(){
     console.log('Existe usuario activo');
     // Navbar
     var itemsNavbar = document.getElementById('items-nav');
-    itemsNavbar.innerHTML = `
-    <li class="nav-item">
-    <a class="nav-link nav-link-icon" href="https://www.facebook.com/minnercrypto21/" target="_blank" data-toggle="tooltip" title="Like us on Facebook">
-      <i class="fa fa-facebook-square"></i>
-      <span class="nav-link-inner--text d-lg-none">Facebook</span>
+    itemsNavbar.innerHTML = `<li class="nav-item dropdown dropdown-hover mx-2">
+    <a class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center font-weight-bold" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ver Planes" id="dropdownMenuDocs" data-bs-toggle="dropdown" aria-expanded="false">
+      Planes
     </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link nav-link-icon" href="https://www.instagram.com/theminnercrypto" target="_blank" data-toggle="tooltip" title="Follow us on Instagram">
-        <i class="fa fa-instagram"></i>
-        <span class="nav-link-inner--text d-lg-none">Instagram</span>
-      </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link nav-link-icon" href="https://twitter.com/theminnercrypto" target="_blank" data-toggle="tooltip" title="Follow us on Twitter">
-        <i class="fa fa-twitter-square"></i>
-        <span class="nav-link-inner--text d-lg-none">Twitter</span>
-      </a>
-    </li>
-    <li class="nav-item">
-      <a class="btn btn-outline-primary" href="" onclick="logout()">
-        <span class="nav-link-inner--text">Cerrar Sesión</span>
-      </a>
-    </li>
-    <li class="nav-item d-lg-block">
-      <a href="./dash/dashboard.html" class="btn btn-primary btn-icon">
-        <span class="btn-inner--icon">
-        </span>
-        <span class="nav-link-inner--text">Volver al Tablero</span>
-      </a>
-    </li>
-    `;
+  </li>
+  <li class="nav-item ms-lg-auto">
+    <a class="nav-link nav-link-icon me-2" onclick="logout()" href="">
+      <i class=""></i>
+      <p class="d-inline text-sm z-index-1 font-weight-bold" data-bs-toggle="tooltip" data-bs-placement="bottom" title="logout">Cerrar Sesión</p>
+    </a>
+  </li>
+  <li class="nav-item my-auto ms-3 ms-lg-0">
+    <a href="./dash/dashboard.html" class="btn btn-sm  bg-gradient-primary  btn-round mb-0 me-1 mt-2 mt-md-0">Dashboard</a>
+  </li>`;
     var itemsNavbar = document.getElementById('signupModal');
     itemsNavbar.innerHTML = `
     <div></div>
