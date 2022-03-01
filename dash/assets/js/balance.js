@@ -33,12 +33,6 @@ function verificar(){
   });
 }
 
-const balanceBTC = document.getElementById('balanceBTC');
-const investmentBTC = document.getElementById('investment-btc');
-const timeActive = document.getElementById('time-active');
-const planeId = document.getElementById('plane');
-var priceBTC = 50819.40;
-const idUser = document.getElementById('idUser');
 const balanceId = document.getElementById("balance");
 const investmentId = document.getElementById("investment");
 const numberPlanId = document.getElementById("number-plan");
@@ -50,20 +44,10 @@ async function setupUI(user) {
       .doc(user.uid)
       .get()).data();
 
-    const nameComplet = userCollection.name + ' ' + userCollection.lastname; 
-    idUser.innerHTML = nameComplet;
-    const balance = `<sup>$</sup>${userCollection.balance}`;
-    const investment = `<sup>$</sup>${userCollection.investment}`;
+    const balance = `<span>$</span>${userCollection.balance}`;
+    const investment = `<span>$</span>${userCollection.investment}`;
     const numberPlan = `${userCollection.numberPlan}`;
     const day = `${userCollection.day}/15`;
-    var balanceUSDBTC = userCollection.balance / priceBTC;
-    var montBalance = balanceUSDBTC.toFixed(8); 
-    balanceBTC.innerHTML = montBalance;
-    var conInvestmentBTC = userCollection.investment / priceBTC;
-    var montInvestment = conInvestmentBTC.toFixed(8); 
-    investmentBTC.innerHTML = montInvestment;
-    planeId.innerHTML = userCollection.plan;
-    timeActive.innerHTML = userCollection.date;
     balanceId.innerHTML = balance;
     investmentId.innerHTML = investment;
     numberPlanId.innerHTML = numberPlan;
