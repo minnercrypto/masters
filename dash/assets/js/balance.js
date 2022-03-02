@@ -47,7 +47,7 @@ async function setupUI(user) {
     const balance = `<span>$</span>${userCollection.balance}`;
     const investment = `<span>$</span>${userCollection.investment}`;
     const numberPlan = `${userCollection.numberPlan}`;
-    const day = `${userCollection.day}/15`;
+    const day = `${userCollection.day}`;
     balanceId.innerHTML = balance;
     investmentId.innerHTML = investment;
     numberPlanId.innerHTML = numberPlan;
